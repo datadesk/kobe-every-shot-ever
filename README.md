@@ -13,6 +13,8 @@ Once we scraped the data, we exported a csv and translated the x and y coordinat
 
 When you translate x and y coordinates to latitude and longitude, don't forget that the length of a degree of latitude is NOT the same as a degree of longitude. We did not remember this.
 
+####END WARNING
+
 After adding lat and lon, we uploaded the data to CartoDB. Then it was time to display it in Leaflet. Here's the magic snippet:
 	
 	cartodb.createLayer(mapchart, {
