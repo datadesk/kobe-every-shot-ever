@@ -22,6 +22,7 @@ This solution is what we came up with on a deadline — and it worked. But next 
 • It's fun to center the hoop on the Staples Center, but in our case it added nothing to the project. We should have just centered the map at 0,0 to make it easier to work with.
 
 
+#####Get it in CartoDB
 After adding lat and lon, we uploaded the data to CartoDB. Then it was time to display it in Leaflet. Here's the magic snippet:
 	
 	cartodb.createLayer(mapchart, {
