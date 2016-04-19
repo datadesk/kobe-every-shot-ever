@@ -11,7 +11,7 @@ Once we scraped the data, we exported a csv and translated the x and y coordinat
 
 ####WARNING
 
-When you translate x and y coordinates to latitude and longitude, don't forget that the length of a degree of latitude is NOT the same as a degree of longitude. We did not remember this.
+When you translate x and y coordinates to latitude and longitude, don't forget that the length of a degree of latitude is NOT the same as a degree of longitude. We did not remember this until it was too late.
 
 ####END WARNING
 
