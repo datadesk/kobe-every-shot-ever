@@ -11,7 +11,7 @@ Once we scraped the data, we exported a csv and translated the x and y coordinat
 
 #####Learn from our mistakes
 
-We did a very simple translation from X and Y coordinates to latitude and longitude. We simply opened the data in Excel and added two extra columns that added the X and Y values (divided by 1000) to the latitude and longitude of the Staples Center.
+We did a very simple translation from X and Y coordinates to latitude and longitude. We opened the data in Excel and added two extra columns that added the X and Y values (divided by 1000) to the latitude and longitude of the Staples Center.
 
 This solution is what we came up with on a deadline — and it worked. But next time, we'd do it differently. Here's why:
 
