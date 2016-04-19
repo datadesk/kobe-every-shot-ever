@@ -9,11 +9,14 @@ The Python code is in a Jupyter notebook in this repository. You can view it her
 
 Once we scraped the data, we exported a csv and translated the x and y coordinates to latitude and longitude.
 
-####WARNING
+#####Learn from our mistakes
 
-When you translate x and y coordinates to latitude and longitude, don't forget that the length of a degree of latitude is NOT the same as a degree of longitude. We did not remember this until it was too late.
+We did a very simple translation from X and Y coordinates to latitude and longitude. We simply opened the data in Excel and added two extra columns that added the X and Y values (divided by 1000) to the latitude and longitude of the Staples Center.
 
-####END WARNING
+This solution is what we came up with on a deadline — and it worked. But next time, we'd do it differently. Here's why:
+• One degree of latitude does not cover the same distance as one degree of longitude. So our court ended up slightly stretched vertically.
+• Opening the data in Excel is a non-programmatic step that is hard to automate. It would have been a lot easier to just add the new columns in Pandas.
+
 
 After adding lat and lon, we uploaded the data to CartoDB. Then it was time to display it in Leaflet. Here's the magic snippet:
 	
@@ -75,3 +78,4 @@ cartodb.createLayer is a method of cartodb.js that lets you quickly create a lea
 	       marker-width: " + baseMarkerWidth + "; \
 	     } \
 	}";
+
